@@ -1,7 +1,5 @@
 Building a Sequencer
 ====================
-from Derivative's [Mutek Montreal] [1] 2017 Workshop
+from Derivative's [Mutek Montreal 2017](http://www.mutek.org/en/montreal/2017/events/1357-derivative-workshop-touchdesigner-day-1) Workshop
 
 ![sequencer ui](https://github.com/wuestenarchitekten/workshops/blob/master/Sequencer/img/sequencerUI.jpg)
-
-[1]: http://www.mutek.org/en/montreal/2017/events/1357-derivative-workshop-touchdesigner-day-1 "Mutek Montreal"
