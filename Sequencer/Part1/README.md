@@ -1,11 +1,11 @@
 Setup a Render
 --------------
-	- Create a Container COMP with size 400x400
-	- Place a Rectangle SOP and rclick connect to a Geometry COMP
-	- Create a Camera and a Render 
-	- Reference parent panel size for Render resolution
-	- Reference a Constant Material to the Geo
-	- Add a out TOP, name bg and reference as bg TOP to parent
+- Create a Container COMP with size 400x400
+- Place a Rectangle SOP and rclick connect to a Geometry COMP
+- Create a Camera and a Render 
+- Reference parent panel size for Render resolution
+- Reference a Constant Material to the Geo
+- Add a out TOP, name bg and reference as bg TOP to parent
 
 Make it an Instance Grid
 ------------------------
