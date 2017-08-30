@@ -4,7 +4,7 @@ from Derivative's Toronto Workshop October 2015
 
 Tested with TouchDesigner099 2017.12740
 
-![mosaic](https://github.com/wuestenarchitekten/workshops/blob/master/Photomosaic/img/mosaic.jpg)
+![mosaic](https://github.com/wuestenarchitekten/workshops/blob/master/Photomosaic/img/moasic.jpg)
 
 - Extract the AlbumCovers.zip file into your project folder
 - Get the image ready
