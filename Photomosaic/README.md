@@ -4,6 +4,7 @@ from Derivative's Toronto Workshop October 2015
 
 Tested with TouchDesigner099 2017.12740
 
+- Extract the AlbumCovers.zip file into your project folder
 - Get the image ready
   - Delete everything
   - Drag Getty in and change resolution (set viewer smoothness to "Nearest Pixel")
