@@ -9,25 +9,16 @@ Setup a Render
 
 Make it an Instance Grid
 ------------------------
+- Create a Grid SOP
+- Convert to CHOP and use for instancing
 - On the parent create a custom page and parameters for
 	- Layers
 	- Bars
 	- Step per Bar
 - Total number of btns is Layers * Bars * Step per Bar
-- For x position add Pattern CHOP with
-	- Type = Ramp
-	- Length = total number of btns
-	- Cycles = Layers
-	- Amplitude = Bars * Step per Bar * ~ rect size
-- append a math chop and move values to center
-- For y position add Pattern CHOP with
-	- Type = Ramp Samplles
-	- Length = Total number of btns
-	- Reverse = On
-- Append a limit CHOP and quantize to Floor by step of Bars * Step per Bar
-- Normalize output
-- Append a math CHOP and multiply by ~rectsize * Layers/2
-- Merge the math CHOPS, append null and use as instancing
+- Layers can be used as Grid Row Number
+- Bars*Step per Bar can be used as Col Number
+
 
 Add Textures for different states
 ---------------------------------
