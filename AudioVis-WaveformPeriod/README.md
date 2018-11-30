@@ -1,3 +1,5 @@
+![Raster-Noton Screen](https://github.com/wuestenarchitekten/workshops/blob/master/AudioVis-WaveformPeriod/sample.JPG)
+
 ## Translating Amplitude to Period of a waveform
 - add a Line SOP with 150 points
 - append a Copy SOP and create 270 copies
