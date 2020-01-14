@@ -1,0 +1,43 @@
+	- Create a circle SOP and append a Null SOP
+	- Get the positional values with a Sop To CHOP for only tx ty
+	- We need the rotation for a rectangle to be aligned with 2 neighbouring points
+	- Tan a = dy/dx --> but not good enough for y < 0 --> use atan2 which solves for all quadrants
+	- To get dx and dy use Slope CHOP
+		○ Method is Previous and Current Sample
+		○ Timeslice Off
+	- Weird first sample is because of the first "previous" being not well defined
+	- Add Extend CHOP and set to cycle
+	- and divide result by me.time.rate as slope and speed work on a fps basis
+	- Use function CHOP to calculate atan2 which is the rotation
+	- Rename to rot
+	- Merge with the initial x and y
+	- Create a square, Render instance setup with the rotation and pos as instance source
+
+File 1:
+	- Calculate the distance between 2 points by using Math:Length
+	- Rename to scale for instancing
+	- For the Text we need to load each letter into a slice of a 2D Array
+	- For ascii we can say that we require letters from char 32 to char 256
+	- Add Table DAT with 224 rows
+	- Append Eval DAT with expression: char(me.inputCell.row+32)
+	- Read into Texture3D TOP (watch for -1 offset for me.time.frame as frame is index 1)
+	- Create a pettern CHOP with Ramp Samples and use as textureIndex
+
+File 2:
+	- Animate with Noise
+	- Append Noise CHOP after Circle SOP
+	- Animates only in z because of Normals --> explore circle Normals
+	- Use SOPTo and CHOPTo to assign Normals
+	- Another way to animate this would be via Noise Channels
+	- Append a Null CHOP after SOPTo and switch input for 2 Noise Channels, then animate with Speed
+
+File 3:
+	- Get some text and paste into a text DAT
+	- Change the Pattern to be a constant type and convert text to int using ord > point out slowness
+	- ord(op('text2').text[me.sampleIndex])-32
+	- Disconnect input of pattern and use length of text to specify the Length of the pattern
+	- Use trim to only take text length of waveform
+	
+Still Time? 
+	- Draw path with Record CHOP
+
